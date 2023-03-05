@@ -32,6 +32,9 @@ class MainApp(App, MDApp):
     def build_app(self, **kwargs):
         return Factory.LoginScreen()
 
+    def print_to_console(self):
+        print("Press")
+
 
 if __name__ == "__main__":
     MainApp().run()
