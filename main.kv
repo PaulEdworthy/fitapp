@@ -1,0 +1,39 @@
+MDFloatLayout:
+    orientation: 'vertical'
+
+    MDBottomNavigation:
+
+        MDBottomNavigationItem:
+            name: 'screen1'
+            text: 'Workout'
+            icon: 'weight-lifter'
+
+            MDLabel:
+                text: 'Workout Screen'
+                halign: 'center'
+
+            MDFloatingActionButtonSpeedDial:
+                data: app.data
+                root_button_anim: True
+                hint_animation: True
+                icon: 'pencil'
+                icon_size: 24
+                pos_hint: {'center_x': 0.85, 'center_y': 0.085}
+
+        MDBottomNavigationItem:
+            name: 'screen2'
+            text: 'Recovery'
+            icon: 'lightning-bolt-circle'
+
+            MDLabel:
+                text: 'Recovery Screen'
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen3'
+            text: 'Log'
+            icon: 'calendar-today'
+
+            MDLabel:
+                text: 'Workout History'
+                halign: 'center'

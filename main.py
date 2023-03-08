@@ -1,39 +1,33 @@
-import os
-
-from kaki.app import App
 from kivy.core.window import Window
+from kivy.lang import Builder
 from kivymd.app import MDApp
-from kivy.factory import Factory
-
-# TO RUN IN TERMINAL TYPE, 'DEBUG=1 python main.py
-Window.clearcolor = (51/255, 51/255, 51/255, 1)
 
 
-class MainApp(App, MDApp):
+colors = {
+    'Red': {
+        '200': 'EC1A1A',
+        '500': 'EC1A1A',
+        '700': 'EC1A1A'
+    }
+}
 
-    # set back to 0 to stop live reloading
-    DEBUG = 1
-    Window.size = [350, 660]
+class MainApp(MDApp):
+    #Window.clearcolor = (51 / 255, 51 / 255, 51 / 255, 1)
+    Window.size = [385, 800]
+    Window.top = 200
+    Window.left = 100
 
-    # kivy files to watch
-    KV_FILES = [
-        os.path.join(os.getcwd(), 'screen_manager.kv'),
-        os.path.join(os.getcwd(), 'login_screen.kv')
-    ]
-
-    # python files to watch
-    CLASSES = {
-        "MainScreenManager": "screen_manager",
-        "LoginScreen": "login_screen"
+    data = {
+        'New workout': 'new-box',
+        'Add manual': 'pencil',
+        'Repeat': 'repeat'
     }
 
-    AUTORELOADER_PATHS = [(os.getcwd(), {"recursive": True})]
+    def build(self):
+        self.theme_cls.theme_style = 'Dark'
+        self.theme_cls.primary_palette = 'Red'
 
-    def build_app(self, **kwargs):
-        return Factory.LoginScreen()
-
-    def print_to_console(self):
-        print("Press")
+        return Builder.load_file('main.kv')
 
 
 if __name__ == "__main__":
