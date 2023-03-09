@@ -2,7 +2,7 @@ MDFloatLayout:
     orientation: 'vertical'
 
     MDBottomNavigation:
-
+##################### WORKOUT SCREEN ##################
         MDBottomNavigationItem:
             name: 'screen1'
             text: 'Workout'
@@ -20,14 +20,131 @@ MDFloatLayout:
                 icon_size: 24
                 pos_hint: {'center_x': 0.85, 'center_y': 0.085}
 
+##################### RECOVERY SCREEN ##################
+
         MDBottomNavigationItem:
             name: 'screen2'
             text: 'Recovery'
             icon: 'lightning-bolt-circle'
 
             MDLabel:
-                text: 'Recovery Screen'
-                halign: 'center'
+                text: '5'
+                font_size: '48dp'
+                pos_hint: {'center_x': .98, 'center_y': 0.87}
+
+            MDLabel:
+                text: 'FRESH MUSCLE\n       GROUPS'
+                font_size: '12dp'
+                pos_hint: {'center_x': .9, 'center_y': 0.8}
+
+            MDCard:
+                orientation: 'vertical'
+                md_bg_color: '#333333'
+                size_hint: None, None
+                size: root.width - 100, root.height - 320
+                pos_hint: {'center_x': .5, 'center_y': 0.4}
+
+                OneLineIconListItem:
+                    text: 'BACK'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'stop_sign'
+                        icon: 'close-octagon'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 236/255, 26/255, 26/255, 1
+
+                OneLineIconListItem:
+                    text: 'CHEST'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'yield_sign'
+                        icon: 'sign-yield'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 255/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'QUADS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'check_mark'
+                        icon: 'checkbox-marked-circle'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 1/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'SHOULDERS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'yield_sign'
+                        icon: 'sign-yield'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 255/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'TRAPS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'check_mark'
+                        icon: 'checkbox-marked-circle'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 1/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'BICEPS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'stop_sign'
+                        icon: 'close-octagon'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 236/255, 26/255, 26/255, 1
+
+                OneLineIconListItem:
+                    text: 'TRICEPS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'yield_sign'
+                        icon: 'sign-yield'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 255/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'FOREARMS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'check_mark'
+                        icon: 'checkbox-marked-circle'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 1/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'CALVES'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'check_mark'
+                        icon: 'checkbox-marked-circle'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 1/255, 255/255, 1/255, 1
+
+                OneLineIconListItem:
+                    text: 'HAMSTRINGS'
+                    font_size: '24dp'
+                    IconLeftWidget:
+                        name: 'check_mark'
+                        icon: 'checkbox-marked-circle'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        theme_text_color: 'Custom'
+                        text_color: 1/255, 255/255, 1/255, 1
+
+##################### lOG SCREEN ##################
 
         MDBottomNavigationItem:
             name: 'screen3'

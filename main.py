@@ -23,6 +23,7 @@ class MainApp(MDApp):
         'Repeat': 'repeat'
     }
 
+
     def build(self):
         self.theme_cls.theme_style = 'Dark'
         self.theme_cls.primary_palette = 'Red'
