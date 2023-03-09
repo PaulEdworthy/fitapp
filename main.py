@@ -1,7 +1,9 @@
+from kivy.clock import Clock
 from kivy.core.window import Window
 from kivy.lang import Builder
-from kivymd.app import MDApp
-
+from kivy.uix.screenmanager import ScreenManager
+from kivymd.app import MDApp, App
+from kivymd.uix.screen import MDScreen
 
 colors = {
     'Red': {
